@@ -1,3 +1,5 @@
+![workflow badge](https://github.com/elvirrrk/project-podcasts/actions/workflows/deploy.yml/badge.svg)
+
 ## Scripts
 
 >

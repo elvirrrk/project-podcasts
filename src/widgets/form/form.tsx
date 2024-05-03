@@ -10,7 +10,8 @@ import {
 export function ErrorMessage() {
   const [input, setInput] = useState("");
 
-  const handleInputChange = (evt) => setInput(evt.target.value);
+  const handleInputChange = (evt: React.ChangeEvent<HTMLInputElement>) =>
+    setInput(evt.target.value);
 
   const isError = input === "";
 
