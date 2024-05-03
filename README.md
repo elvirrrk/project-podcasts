@@ -12,7 +12,7 @@
 
 > - An application for listening to podcasts
 > - The API used:
-> - [View the project]()
+> - [View the project](https://podcaster-project-elvirrrk.netlify.app)
 
 # React + TypeScript + Vite
 

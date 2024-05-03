@@ -1,10 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./app/App.tsx";
-import "./index.scss";
+import { Provider } from "react-redux";
+import App from "src/app/App.tsx";
+import { ChakraProvider, theme } from "@chakra-ui/react";
+import { store } from "src/app/store/store.tsx";
+import "./main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ChakraProvider theme={theme}>
+        <App />
+      </ChakraProvider>
+    </Provider>
   </React.StrictMode>,
 );
