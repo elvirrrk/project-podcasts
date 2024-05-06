@@ -1,7 +1,7 @@
 import { Container, Flex, Box, Image, useColorMode } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 import { Link as ChakraLink } from "@chakra-ui/react";
-import Logo from "src/shared/icons/podcaster-logo.svg";
+import Logo from "src/shared/icons/logo.svg";
 
 export function Footer() {
   const { colorMode } = useColorMode();
@@ -15,6 +15,8 @@ export function Footer() {
               objectFit="cover"
               alt="logo podcaster project"
               mr={6}
+              w={10}
+              h={10}
             />
           </ChakraLink>
           <span>by elvirrrk</span>

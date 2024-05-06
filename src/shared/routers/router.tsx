@@ -4,7 +4,6 @@ import { SignUp } from "src/features/signUp/signUp.tsx";
 import { MainPage } from "src/pages/mainPage/mainPage.tsx";
 import { CommonLayout } from "src/shared/ui/layout/commonLayout.tsx";
 import { ErrorPage } from "src/pages/errorPage/errorPage.tsx";
-// import type { RouteObject } from 'react-router-dom';
 
 export const router = createBrowserRouter([
   {
