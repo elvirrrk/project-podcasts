@@ -1,4 +1,4 @@
-![workflow badge](https://github.com/elvirrrk/project-podcasts/actions/workflows/deploy.yml/badge.svg)
+[![Deploy React App](https://github.com/elvirrrk/project-podcasts/actions/workflows/deploy.yml/badge.svg)](https://github.com/elvirrrk/project-podcasts/actions/workflows/deploy.yml)
 
 ## Scripts
 
@@ -12,37 +12,44 @@
 
 ## About
 
-> - An application for listening to podcasts
-> - The API used:
-> - [View the project](https://podcaster-project-elvirrrk.netlify.app)
+> - An application to find pokemon
+> - The API used: [pokeapi](https://pokeapi.co/)
+> - [View the project](https://pokemon-project-elvirrrk.netlify.app)
 
-# React + TypeScript + Vite
+## Требования к проекту
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 1 уровень (обязательный - необходимый минимум)
 
-Currently, two official plugins are available:
+- [ ] Реализованы Требования к функциональности.
+- [ ] Для хранения учетных записей пользователей, их Избранного и Истории поиска, используем LocalStorage.
+- [ ] Пишем функциональные компоненты c хуками в приоритете над классовыми.
+- [ ] Есть разделение на умные и глупые компоненты.
+- [ ] Есть рендеринг списков.
+- [ ] Реализована хотя бы одна форма.
+- [ ] Есть применение Контекст API.
+- [x] Есть применение предохранителя.
+- [ ] Есть хотя бы один кастомный хук.
+- [ ] Хотя бы несколько компонентов используют PropTypes.
+- [ ] Поиск не должен триггерить много запросов к серверу.
+- [ ] Есть применение lazy + Suspense.
+- [ ] Используем Modern Redux with Redux Toolkit.
+- [ ] Используем слайсы.
+- [ ] Есть хотя бы одна кастомная мидлвара.
+- [ ] Используется RTK Query.
+- [ ] Используется Transforming Responses
+### 2 уровень (необязательный)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [ ] Использование TypeScript.
+- [ ] Использование Storybook.
+- [ ] Использование Firebase.
+- [ ] Обновление информации из Firebase через инвалидацию кеша RTK Query.
+- [ ] Низкая связанность клиентского кода с хранилищем.
+- [x] Настроен CI/CD.
+- [ ] Реализована виртуализация списков.
+- [ ] Используются мемоизированные селекторы.
+- [ ] Используется нормализованная структура стейта.
+- [ ] Проведена оптимизация приложения.
+- [ ] Feature Flags.
+- [ ] Добавлены тесты.
+- [ ] Связь UI и бизнес-логики построена не через команды, а через события.
+- [ ] Project Console API.

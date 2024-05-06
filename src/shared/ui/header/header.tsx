@@ -2,7 +2,7 @@ import { Container, Flex, Box, Image, useColorMode } from "@chakra-ui/react";
 import { StyleColorMode } from "src/features/switchMode/switchMode.tsx";
 import { NavLink as ReactRouterLink } from "react-router-dom";
 import { Link as ChakraLink } from "@chakra-ui/react";
-import Logo from "src/shared/icons/podcaster-logo.svg";
+import Logo from "src/shared/icons/logo.svg";
 import "./header.scss";
 
 export function Header() {
@@ -12,7 +12,13 @@ export function Header() {
       <Container maxW="container.lg">
         <Flex justifyContent="space-between" alignItems="center">
           <ChakraLink as={ReactRouterLink} to="/">
-            <Image src={Logo} objectFit="cover" alt="logo podcaster project" />
+            <Image
+              src={Logo}
+              objectFit="cover"
+              w={12}
+              h={12}
+              alt="logo podcaster project"
+            />
           </ChakraLink>
           <Flex alignItems="center" gap={5}>
             <ChakraLink as={ReactRouterLink} to="/signup" fontWeight="semibold">
